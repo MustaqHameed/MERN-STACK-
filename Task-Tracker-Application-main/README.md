@@ -140,5 +140,4 @@ Usage
     - **Status**: Pending, In Progress, or Completed.
     - **Project**: Users can select a project to view tasks associated with it.
     
-Contact
-For any questions or feedback, feel free to reach out to me at lingamhemanth914@gmai.com
+
