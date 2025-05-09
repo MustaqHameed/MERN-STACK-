@@ -1,0 +1,183 @@
+/* General Dashboard Styling */
+.dashboard {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fbfd;
+  color: #1f2937;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  padding-top: 65px;
+}
+
+/* Title and welcome */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.welcome {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Card Container (Grid Layout) */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+/* Individual Card Styling */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Content */
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.card-label {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.card-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-note {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.card-note.green {
+  color: green;
+}
+
+.card-note.gray {
+  color: gray;
+}
+
+/* Color Variants */
+.card-blue {
+  background-color: #e0f7fa;
+}
+
+.card-green {
+  background-color: #c8e6c9;
+}
+
+.card-purple {
+  background-color: #f3e5f5;
+}
+
+.card-pink {
+  background-color: #fce4ec;
+}
+
+/* Quick Actions Section */
+.quick-actions {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.quick-actions h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  flex: 1 1 100%;
+}
+
+/* New Project Button */
+.new-project-btn {
+  background-color: #1e88e5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+} 
+
+.new-project-btn:hover {
+  background-color: #1565c0;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+/* Media Queries for Responsive Layout */
+@media (max-width: 992px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-actions {
+    text-align: center;
+    width: 92%;
+  }
+}
+/* Media Queries for Responsive Layout */
+@media (max-width: 992px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-actions {
+    width: 93%;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    padding: 16px;
+  }
+
+  .new-project-btn {
+    width: 100%;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 10px;
+  }
+}

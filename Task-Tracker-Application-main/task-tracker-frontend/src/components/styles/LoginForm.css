@@ -1,0 +1,92 @@
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+.login-container h2 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.login-container h4 {
+    margin-bottom: 20px;
+    color: #777;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-form input {
+    padding: 12px 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.login-form input:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #e6f0ff;
+}
+
+.login-form button {
+    padding: 12px;
+    font-size: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.success-msg {
+    color: green;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.error-msg {
+    color: red;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.redirect-signup {
+    margin-top: 20px;
+    color: #555;
+    font-size: 14px;
+}
+
+.redirect-signup a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.redirect-signup a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}

@@ -1,0 +1,267 @@
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.project-description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.project-task-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Card for each project task section */
+.project-card-combined,
+.task-section {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Full height */
+}
+
+/* Right section for tasks and edit form */
+.task-form-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  height: 100%; /* Full height */
+}
+
+.task-section {
+  margin-bottom: 20px;
+}
+
+.task-status-summary {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.task-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.task-item {
+  padding: 15px;
+  background: #f6f6f6;
+  margin: 8px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.task-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.add-task-btn,
+.edit-btn,
+.delete-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-task-btn {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+}
+
+.edit-btn {
+  background-color: orange;
+  color: white;
+  margin-left: 10px;
+}
+
+.delete-btn {
+  background-color: red;
+  color: white;
+}
+
+/* Popup form for editing task */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-form {
+  background: white;
+  padding: 30px;
+  width: 90%;
+  max-width: 450px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.edit-input,
+.edit-textarea,
+.status-select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.modal-btn-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.save-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 16px;
+}
+
+.cancel-btn {
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 16px;
+}
+
+/* Progress bar styling */
+.progress-bar-section {
+  margin-top: 20px;
+}
+
+.progress-bar-background {
+  width: 100%;
+  height: 15px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: green;
+  border-radius: 8px;
+}
+
+/* Task Status Summary */
+.task-status-summary p {
+  margin: 4px 0;
+}
+
+/* Buttons container */
+.project-actions button {
+  margin-right: 10px;
+}
+
+/* Project and Task Wrapper Alignment */
+.project-card-combined,
+.task-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Label styles */
+.popup-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  color: #333;
+}
+
+/* Ensure inputs and textareas align well */
+.edit-input,
+.edit-textarea,
+.status-select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+/* Adjust textarea height */
+.edit-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Task Item Styling */
+.task-item {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.task-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Task Title and Status */
+.task-header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0072ff;
+  margin-bottom: 10px;
+}
+
+/* Task Description */
+.task-description {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 5px;
+  line-height: 1.5;
+}
+
+/* Edit Button */
+.edit-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-weight: bold;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  background-color: darkorange;
+}

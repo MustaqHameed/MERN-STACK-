@@ -1,0 +1,135 @@
+/* Center the entire form vertically and horizontally */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Signup container */
+.signup-container {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px 30px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #ddd;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.signup-container:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.signup-container h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #222;
+}
+
+.signup-container h4 {
+  margin-bottom: 25px;
+  font-size: 16px;
+  color: #707070;
+}
+
+/* Form structure */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.signup-form input {
+  padding: 14px 16px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+  transition: all 0.3s ease;
+}
+
+.signup-form input:focus {
+  border-color: #007bff;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+  outline: none;
+}
+
+.signup-form button {
+  padding: 14px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Success and error messages */
+.success-msg,
+.error-msg {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.success-msg {
+  color: #28a745;
+}
+
+.error-msg {
+  color: #dc3545;
+}
+
+/* Styling for react-select */
+.signup-form .react-select__control {
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fdfdfd;
+  transition: all 0.3s ease;
+}
+
+.signup-form .react-select__control--is-focused {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+}
+
+.signup-form .react-select__placeholder {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.signup-form .react-select__menu {
+  font-size: 14px;
+}
+
+/* Redirect link to login */
+.redirect-login {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #555;
+}
+
+.redirect-login a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.redirect-login a:hover {
+  text-decoration: underline;
+}

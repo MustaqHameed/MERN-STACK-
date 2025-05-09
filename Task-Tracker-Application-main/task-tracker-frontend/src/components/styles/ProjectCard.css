@@ -1,0 +1,100 @@
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+    border-left: 4px solid transparent;
+  }
+  
+  .project-card.completed {
+    border-left: 6px solid #28a745;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-6px);
+  }
+  
+  .card-header h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #2c3e50;
+  }
+  
+  .project-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  .status-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .project-status {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .project-status.done {
+    color: #28a745;
+  }
+  
+  .project-status.in-progress {
+    color: #f39c12;
+  }
+  
+  /* Horizontal Progress Bar */
+  .horizontal-progress-container {
+    width: 100%;
+  }
+  
+  .horizontal-progress-bar {
+    height: 10px;
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  .progress-fill {
+    background-color: #036907;
+    height: 100%;
+    width: 0%;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  .progress-percent {
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+  }
+  
+  .card-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .view-details-btn {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-details-btn:hover {
+    background-color: #0056b3;
+  }
+  

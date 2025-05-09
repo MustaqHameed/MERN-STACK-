@@ -1,0 +1,113 @@
+/* Container */
+.create-project-form {
+  min-width: 400px;
+  margin: 50px auto;
+  padding: 30px 30px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Heading */
+.create-project-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Popup message */
+.popup-message {
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+}
+
+.popup-message.success {
+  background-color: #e0f7ec;
+  color: #2e7d32;
+  border: 1px solid #a5d6a7;
+}
+
+.popup-message.error {
+  background-color: #fdecea;
+  color: #d32f2f;
+  border: 1px solid #f5c6cb;
+}
+
+/* Form */
+.create-project-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Label */
+.create-project-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  text-align: left;
+  color: #555;
+}
+
+/* Input & Textarea */
+.create-project-form input,
+.create-project-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  resize: vertical;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+/* Placeholder styling */
+input::placeholder,
+textarea::placeholder {
+  color: #999;
+  font-style: italic;
+  font-size: 14px;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* Submit button */
+.create-project-form button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-project-form button:hover {
+  background-color: #0056b3;
+}
+
+.create-project-form button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
